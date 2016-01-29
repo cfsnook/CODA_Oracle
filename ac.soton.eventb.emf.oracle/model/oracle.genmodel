@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2012, University of Southampton.&#xD;All rights reserved. This program and the accompanying materials  are made&#xD;available under the terms of the Eclipse Public License v1.0 which accompanies this &#xD;distribution, and is available at http://www.eclipse.org/legal/epl-v10.html&#xA;"
+    modelDirectory="/ac.soton.eventb.emf.oracle/src" editDirectory="/ac.soton.eventb.emf.oracle.edit/src"
+    modelPluginID="ac.soton.eventb.emf.oracle" modelName="Oracle" editPluginClass="ac.soton.eventb.emf.oracle.edit.provider.OracleEditPlugin"
+    nonNLSMarkers="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    tableProviders="true" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore">
+  <foreignModel>oracle.ecore</foreignModel>
+  <genPackages prefix="Oracle" basePackage="ac.soton.eventb.emf" disposableProviderFactory="true"
+      extensibleProviderFactory="true" childCreationExtenders="true" ecorePackage="oracle.ecore#/">
+    <genClasses ecoreClass="oracle.ecore#//Oracle">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference oracle.ecore#//Oracle/runs"/>
+    </genClasses>
+    <genClasses ecoreClass="oracle.ecore#//Run">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference oracle.ecore#//Run/entries"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oracle.ecore#//Run/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="oracle.ecore#//Entry">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oracle.ecore#//Entry/clock"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oracle.ecore#//Entry/machine"/>
+    </genClasses>
+    <genClasses ecoreClass="oracle.ecore#//Snapshot">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference oracle.ecore#//Snapshot/values"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oracle.ecore#//Snapshot/result"/>
+    </genClasses>
+    <genClasses ecoreClass="oracle.ecore#//StringToStringMapEntry">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oracle.ecore#//StringToStringMapEntry/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oracle.ecore#//StringToStringMapEntry/key"/>
+    </genClasses>
+    <genClasses ecoreClass="oracle.ecore#//Step">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oracle.ecore#//Step/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oracle.ecore#//Step/Args"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
