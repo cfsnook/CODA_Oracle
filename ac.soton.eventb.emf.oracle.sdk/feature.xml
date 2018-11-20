@@ -2,7 +2,7 @@
 <feature
       id="ac.soton.eventb.emf.oracle.sdk"
       label="%featureName"
-      version="1.2.0.qualifier"
+      version="1.2.0.release"
       provider-name="%featureVendor"
       license-feature="org.rodinp.license"
       license-feature-version="1.0.0.release">
