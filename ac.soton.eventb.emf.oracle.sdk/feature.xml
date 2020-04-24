@@ -38,8 +38,32 @@
          id="ac.soton.eventb.emf.oracle.feature"
          version="0.0.0"/>
 
-   <includes
-         id="ac.soton.eventb.emf.oracle.source.feature"
-         version="0.0.0"/>
+   <plugin
+         id="ac.soton.eventb.emf.oracle.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ac.soton.eventb.emf.oracle.branding.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ac.soton.eventb.emf.oracle.edit.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ac.soton.eventb.emf.oracle.editor.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
 </feature>
