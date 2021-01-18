@@ -8,7 +8,7 @@
   <name>Oracle Root</name>
   <description>Root artifact for Oracle</description>
   <!-- REQUIRED: Version number (using semantic versioning) -->
-  <version>1.2.1-SNAPSHOT</version>
+  <version>1.2.1.release</version>
   <packaging>pom</packaging>
   <parent>
     <!-- REQUIRED: Group ID is the feature ID -->
@@ -16,7 +16,7 @@
     <!-- Name of the release engineering artifact -->
     <artifactId>releng</artifactId>
     <!-- REQUIRED: Version number of the release engineering artifact -->
-    <version>1.2.1-SNAPSHOT</version>
+    <version>1.2.1.release</version>
     <!-- REQUIRED: Relative path to the release engineering artifact -->
     <relativePath>./ac.soton.eventb.emf.oracle.releng</relativePath>
   </parent>
